@@ -2,8 +2,6 @@ import Head from "next/head"
 import Link from "next/link"
 import React from "react"
 
-import { MEMBER_LIST } from "../member"
-
 import type { NextPage } from "next"
 
 const Home: NextPage = () => {
@@ -16,14 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex flex-col gap-4 justify-center items-center m-0 min-h-screen">
-        {MEMBER_LIST.map((member) => (
-          <Link key={member.id} href={`/${member.name}`}>
-            <div className="p-2 w-96 rounded-md border shadow">
-              <h2 className="text-xl">{member.name}</h2>
-              <p>{member.discription}</p>
-            </div>
-          </Link>
-        ))}
+        <h1>404</h1>
+        <Link href="/">トップページへ戻る</Link>
       </main>
     </div>
   )
