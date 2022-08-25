@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react"
 
-import { mockPoke0 } from "../mocks/Pokemon"
 import { PokeApiResponseType } from "../PokeApi"
 import { Pokemon } from "../types/Pokemon"
-
-const getPokemon = (_name: string) => {
-  return mockPoke0
-}
 
 interface PokemonCardProp {
   name: string
