@@ -36,9 +36,10 @@ const MemberPage = () => {
       <main className="flex flex-col gap-4 justify-center items-center m-0 min-h-screen">
         <h1 className="text-3xl font-semibold">{name}の手持ちポケモン</h1>
         <div className="grid grid-cols-2 gap-4 mt-4">
-          {party.map((pokeName) => (
-            <PokemonCard key={pokeName} name={pokeName} />
-          ))}
+          {typeof party !== "string" &&
+            party.map((pokeName) => (
+              <PokemonCard key={pokeName} name={pokeName} />
+            ))}
         </div>
       </main>
     </div>
