@@ -27,7 +27,8 @@ export const PokemonCard = ({ name }: PokemonCardProp) => {
       })
   }, [])
 
-  if (!pokemon) return <p>Loading...</p>
+  if (!pokemon)
+    return <h1>申し訳ありません。データの取得に失敗したようです🙇</h1>
 
   return (
     <div className="p-2 w-96 rounded-md border shadow">
